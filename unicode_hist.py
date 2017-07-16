@@ -108,11 +108,11 @@ def hist (args, bin_num=1):
 
     return
 
-def test ():
+if __name__ == '__main__':
     import random
     i = 0
     lst = []
     while i < 100:
         lst.append(random.randrange(1,101))
         i = i + 1
-    hist(lst, 11.0)
+    hist(lst, 11)
