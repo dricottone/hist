@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def _bin_iter (avg, bin_width, num_bins):
     bin_ = int(avg - (bin_width * (num_bins // 2)))
     a = 0
@@ -7,10 +9,11 @@ def _bin_iter (avg, bin_width, num_bins):
         a = a + 1
 
 def hist (args, bin_num=1):
-    """ Creates a formatted unicode histogram.
-        Requires a set of numeric values in a list-like object.
-        Optionally set number of bins.
-        By default, throws all values into a single bin histogram. """
+    """
+    Creates a formatted unicode histogram. Requires an iterable of numeric
+    values. Optionally set number of bins. By default, creates a single bin
+    histogram.
+    """
 
     avg = sum(args)/len(args)
     bin_num = int(bin_num)
