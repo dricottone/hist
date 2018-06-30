@@ -1,4 +1,4 @@
-syntax: `unicode_hist.hist(list_object [, number_bins])`
+syntax: `hist.hist(list_object [, number_bins])`
 
 - list_object can be any list-like object (lists, tuples, etc.)
 - number_bins can be any numeric type (default is 1)
