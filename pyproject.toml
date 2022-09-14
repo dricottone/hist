@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hist"
+description = "Draw a histogram"
+readme = "README.md"
+version = "1.0.0"
+authors = [ { name = "Dominic Ricottone", email = "me@dominic-ricottone.com" } ]
+urls = { source = "git.dominic-ricottone.com/~dricottone/hist" }
+license = { file = "LICENSE.md" }
+requires-python = ">=3.6"
+
+[project.scripts]
+hist = "hist.__main__:main"
+

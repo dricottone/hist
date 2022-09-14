@@ -1,0 +1,16 @@
+[bins]
+number = 1
+alternatives = ['b']
+
+[help]
+number = 0
+alternatives = ['h', 'x']
+
+[positive]
+number = 0
+alternatives = ['p']
+
+[version]
+number = 0
+alternatives = ['v', 'V']
+

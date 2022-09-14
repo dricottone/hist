@@ -1,33 +1,23 @@
-syntax: `hist.hist(list_object [, number_bins])`
+# hist
 
-- list_object can be any list-like object (lists, tuples, etc.)
-- number_bins can be any numeric type (default is 1)
+Create a histogram on the terminal.
 
-
-Example output:
+## Usage
 
 ```
-python3 hist.py
-│                  17                        
-│                   █                        
-│                   █                        
-│                   █                        
-│                   █                        
-│                   █                        
-│                   █                        
-│          10  10   █  10          10        
-│           █   █   █   █           █        
-│           █   █   █   █           █       8
-│           █   █   █   █   7       █   7   █
-│   6   6   █   █   █   █   █       █   █   █
-│   █   █   █   █   █   █   █       █   █   █
-│   █   █   █   █   █   █   █   4   █   █   █
-│   █   █   █   █   █   █   █   █   █   █   █
-│   █   █   █   █   █   █   █   █   █   █   █
-│   █   █   █   █   █   █   █   █   █   █   █
-┼────────────────────────────────────────────
-    8  16  24  32  40  48  56  64  72  80  88
-                              Average = 48.63
-             Excluded outliers: 1, 2, 2, 3, 6
+$ ps -eo pmem --sort=-pmem --no-headers | head -n 20 | python -m hist --bins=20 --positive
+│ 10                                                         
+│  █                                                         
+│  █                                                         
+│  █                                                         
+│  █                                                         
+│  █  5                                                      
+│  █  █                                                      
+│  █  █                                                      
+│  █  █  2        2                                          
+│  █  █  █        █                          1               
+┼────────────────────────────────────────────────────────────
+   0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19
+Avg. = 2.25
 ```
 
